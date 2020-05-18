@@ -8,9 +8,9 @@ namespace Northland.Net.Application.Common.Interfaces
     {
         DbSet<Domain.User> Users { get; set; }
         DbSet<Order> Orders { get; set; }
-        DbSet<OrderItem> OrderItems { get; set; }
-        DbSet<Product> Products { get; set; }
-        DbSet<Supplier> Suppliers { get; set; }
+        DbSet<Domain.OrderItem> OrderItems { get; set; }
+        DbSet<Domain.Product> Products { get; set; }
+        DbSet<Domain.Supplier> Suppliers { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 
