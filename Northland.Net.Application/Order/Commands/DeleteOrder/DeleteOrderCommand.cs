@@ -4,25 +4,25 @@ using MediatR;
 using Northland.Net.Application.Common.Exceptions;
 using Northland.Net.Application.Common.Interfaces;
 
-namespace Northland.Net.Application.OrderItem.Commands.DeleteOrderItem
+namespace Northland.Net.Application.Order.Commands.DeleteOrder
 {
-    public class DeleteOrderItemCommand : IRequest
+    public class DeleteOrderCommand : IRequest
     {
         public int Id { get; set; }
 
-        public class DeleteOrderItemCommandHandler : IRequestHandler<DeleteOrderItemCommand>
+        public class DeleteOrderCommandHandler : IRequestHandler<DeleteOrderCommand>
         {
             private readonly INorthlandDbContext _context;
-            public DeleteOrderItemCommandHandler(INorthlandDbContext context)
+            public DeleteOrderCommandHandler(INorthlandDbContext context)
             {
                 _context = context;
             }
-            public async Task<Unit> Handle(DeleteOrderItemCommand request, CancellationToken cancellationToken)
+            public async Task<Unit> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
             {
-                var entity = await _context.OrderItems.FindAsync(request.Id);
+                var entity = await _context.Orders.FindAsync(request.Id);
                 if (entity == null) throw new NotFoundException(nameof(User), request.Id);
 
-                _context.OrderItems.Remove(entity);
+                _context.Orders.Remove(entity);
                 await _context.SaveChangesAsync(cancellationToken);
                 return Unit.Value;
             }

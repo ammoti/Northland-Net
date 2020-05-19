@@ -14,4 +14,4 @@ namespace Northland.Net.Domain
         public long UserId { get; set; }
         public IList<OrderItem> OrderItems { get; set; }
     }
-}
+     }
