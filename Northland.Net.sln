@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northland.Net.Model", "Northland.Net.Model\Northland.Net.Model.csproj", "{4B4BEB6E-BBFE-4C8A-8E70-58F2FBF26D64}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northland.Net.Domain", "Northland.Net.Domain\Northland.Net.Domain.csproj", "{4B94B3F3-FDE6-4F58-8B89-B49E962E6DB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northland.Net.Application", "Northland.Net.Application\Northland.Net.Application.csproj", "{B70E531B-A7DE-4DE0-A9E8-BA102BF79783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northland.Net.Infrastructure", "Northland.Net.Infrastructure\Northland.Net.Infrastructure.csproj", "{3253E1F9-BE59-4D75-B837-744A2CABF391}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,5 +70,17 @@ Global
 		{B70E531B-A7DE-4DE0-A9E8-BA102BF79783}.Release|x64.Build.0 = Release|Any CPU
 		{B70E531B-A7DE-4DE0-A9E8-BA102BF79783}.Release|x86.ActiveCfg = Release|Any CPU
 		{B70E531B-A7DE-4DE0-A9E8-BA102BF79783}.Release|x86.Build.0 = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|x64.Build.0 = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Debug|x86.Build.0 = Debug|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|x64.ActiveCfg = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|x64.Build.0 = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|x86.ActiveCfg = Release|Any CPU
+		{3253E1F9-BE59-4D75-B837-744A2CABF391}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
