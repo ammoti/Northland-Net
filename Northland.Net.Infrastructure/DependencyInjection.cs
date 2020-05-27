@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication;
 using Northland.Net.Infrastructure.Persistence;
+using Northland.Net.Infrastructure.Identity;
 
 namespace Northland.Net.Infrastructure
 {
@@ -11,7 +12,7 @@ namespace Northland.Net.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<INorthlandDbContext>(options =>
+            services.AddDbContext<NorthlandDbContext>(options =>
         {
             options.UseSqlServer(configuration.GetConnectionString("Northland"), x => x.MigrationsAssembly(typeof(INorthlandDbContext).Assembly.FullName));
         });
